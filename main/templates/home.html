@@ -1,0 +1,22 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+
+<div class="row">
+<div class="col-lg-5">
+   
+<h2 class="text-white text-center " style="padding-top: 200px; letter-spacing: 3px;">The Home of<br>Taste in<br>West Drayton</h2>
+<p style="letter-spacing: 7px; color: grey;" class="text-center">Italian Sole Trader</p><br><br>
+<marquee scrollamount="10" style="background-color: whitesmoke ;color: #010203; font-size: 20px; letter-spacing: 4px;height: 40px;padding-top: 5px; border-radius: 30px;" class="text-center ml-5">
+    Opening Hours | 12:30 PM to 12:00 AM</marquee>
+    
+
+
+</div>
+<div class="col-lg-7">
+    <img src="{% static 'core/images/main.jpg' %}" style="width: 90%">
+</div>
+</div>
+{% endblock content %}

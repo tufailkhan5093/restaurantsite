@@ -1,0 +1,41 @@
+<style>
+
+
+
+a.nav-link.active{
+    color:black;
+    background-color: #644f0b;
+   
+    border-radius: 5px;
+}
+a.nav-link:hover{
+    color:black;
+    background-color: #644f0b;
+    border-radius: 5px;
+    font-variant: small-caps;
+}
+
+
+</style>
+{% load static %}
+
+
+<div class="container col-lg-12 my-3 border-bottom">
+  <div class="row text-white" style="height: 60px; background-color:#010203;">
+    <img src="{% static 'core/images/logo.png' %}" style="width: 60px; margin-left: 150px;padding-bottom: 60px;"
+    class="rounded-circle">
+    <h2 style="font-family:Georgia;margin-left: 20px;" class="mt-2"><a href="{% url 'home' %}" style="color:whitesmoke;">24 Hours Italian Restaurant</a></h2>
+    <div class="row ml-auto mt-1" style="padding-right: 140px">
+     
+      <p><a href="{% url 'home' %}" class="text-white mr-4 nav-link {{home}}" >Home</a></p>
+      <p><a href="{% url 'timing' %}" class="text-white mr-4 nav-link {{timing}}" >Timing</a></p>
+      <p><a href="{% url 'aboutus' %}" class="text-white mr-4 nav-link {{aboutus}}" >About Us</a></p>
+      <p><a href="{% url 'contactus' %}" class="text-white mr-4 nav-link {{contactus}}" >Contact Us</a></p>
+
+      
+      <p><a href="{% url 'pricing' %}" class="text-white nav-link {{pricing}} " style="font-size: 15px;">Our Menu & Pricing</a></p>
+     
+    </div>
+    
+  </div>
+</div>
